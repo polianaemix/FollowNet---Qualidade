@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.6 on win32)" generated="2024-09-30T10:42:23.729788" rpa="false" schemaversion="5">
+<suite id="s1" name="FollowNet - Qualidade" source="C:\Users\Poliana Campelo\FollowNet - Qualidade">
+<suite id="s1-s1" name="RobotFramework" source="C:\Users\Poliana Campelo\FollowNet - Qualidade\RobotFramework">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\Poliana Campelo\FollowNet - Qualidade\RobotFramework\Tests">
+<suite id="s1-s1-s1-s1" name="Operador estrangeiro" source="C:\Users\Poliana Campelo\FollowNet - Qualidade\RobotFramework\Tests\Operador_estrangeiro.robot">
+<test id="s1-s1-s1-s1-t1" name="Cenario: Cadastro operador estrangeiro" line="9">
+<kw name="Abrir navegador" owner="resource" type="SETUP">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-30T10:42:24.033758" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001C3609E7F50&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-30T10:42:24.033758" elapsed="0.001022"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-09-30T10:42:24.034780" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-09-30T10:42:24.035754" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-09-30T10:42:24.035754" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-logging</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-09-30T10:42:24.036751" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--incognito</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-09-30T10:42:24.036751" elapsed="0.000000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-30T10:42:24.037776" level="INFO">${EXCLUDES} = ['enable-logging']</msg>
+<var>${EXCLUDES}</var>
+<arg>enable-logging</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-30T10:42:24.037776" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_experimental_option</arg>
+<arg>excludeSwitches</arg>
+<arg>${EXCLUDES}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2024-09-30T10:42:24.038776" elapsed="0.000000"/>
+</kw>
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-09-30T10:42:24.039771" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2024-09-30T10:42:24.039771" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-30T10:42:24.039771" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'chrome_options'</msg>
+<arg>Chrome</arg>
+<arg>chrome_options=${chrome_options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2024-09-30T10:42:24.038776" elapsed="0.007972">TypeError: WebDriver.__init__() got an unexpected keyword argument 'chrome_options'</status>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" start="2024-09-30T10:42:24.046748" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-30T10:42:24.032762" elapsed="0.013986">TypeError: WebDriver.__init__() got an unexpected keyword argument 'chrome_options'</status>
+</kw>
+<status status="FAIL" start="2024-09-30T10:42:24.030767" elapsed="0.016977">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'chrome_options'</status>
+</test>
+<status status="FAIL" start="2024-09-30T10:42:23.777441" elapsed="0.272942"/>
+</suite>
+<status status="FAIL" start="2024-09-30T10:42:23.774668" elapsed="0.278708"/>
+</suite>
+<status status="FAIL" start="2024-09-30T10:42:23.770679" elapsed="0.284691"/>
+</suite>
+<status status="FAIL" start="2024-09-30T10:42:23.745747" elapsed="0.311617"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="FollowNet - Qualidade">FollowNet - Qualidade</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="RobotFramework">FollowNet - Qualidade.RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Tests">FollowNet - Qualidade.RobotFramework.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Operador estrangeiro">FollowNet - Qualidade.RobotFramework.Tests.Operador estrangeiro</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-30T10:42:23.696877" level="WARN">Error in file 'C:\Users\Poliana Campelo\FollowNet - Qualidade\RobotFramework\Tests\Operador_estrangeiro.robot' on line 8: Singular section headers like '*** Test Case ***' are deprecated. Use plural format like '*** Test Cases ***' instead.</msg>
+<msg time="2024-09-30T10:42:23.781462" level="WARN">Error in file 'C:\Users\Poliana Campelo\FollowNet - Qualidade\RobotFramework\resource.robot' on line 4: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2024-09-30T10:42:23.998884" level="WARN">Error in file 'C:\Users\Poliana Campelo\FollowNet - Qualidade\RobotFramework\pages\Login.robot' on line 4: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2024-09-30T10:42:23.999858" level="WARN">Error in file 'C:\Users\Poliana Campelo\FollowNet - Qualidade\RobotFramework\pages\Login.robot' on line 7: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2024-09-30T10:42:24.014836" level="WARN">Error in file 'C:\Users\Poliana Campelo\FollowNet - Qualidade\RobotFramework\pages\FollowNet_grid.robot' on line 6: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+</errors>
+</robot>
